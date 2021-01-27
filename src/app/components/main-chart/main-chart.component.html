@@ -1,0 +1,6 @@
+<div class="mc_container-dayOne">
+    <p class="mc_dayone-p">Fecha del primer contagio registrado: {{dayOne}}</p>
+</div>
+
+<app-chart [country]="country" *ngIf="showChart"
+ [dataCases]="dataCases" [dataMonths]="dataMonths" [dataCasesMonth]="dataCasesMonth" ></app-chart>

@@ -1,0 +1,36 @@
+<div class="nb_container">
+    <div class="nv_container-flex">
+        <div class="nv_container-icon-title">
+                <i class="fas fa-virus"></i>
+                <h1> Estadísticas del Covid-19</h1>
+        </div>
+        <div class="nv_container-searcher">
+            <div *ngIf="showSearcherOptions" class="nv_container-scrollbar-relative">
+                <div class="nv_container-scrollbar-absolute">
+                    .<div class="nv_found-class">
+                        <div class="nv_style-item-scroll" *ngFor="let countryFound of searcherOptionsContent">
+                            <p (click)="selectCountry(countryFound); count = count + 1" class="pointer">{{countryFound}}</p>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+            <div *ngIf="showScroll" class="nv_container-scrollbar-relative">
+                <div class="nv_container-scrollbar-absolute">
+                    <cdk-virtual-scroll-viewport itemSize="5" class="nv_scroll-class">
+                        <div class="nv_style-item-scroll"  *cdkVirtualFor="let countryName of countries; let i = index; let count = count">
+                            <p (click)="selectCountry(countryName)" class="pointer">{{countryName}}</p>
+                            <hr>
+                        </div>
+                    </cdk-virtual-scroll-viewport>
+                </div>
+            </div>
+            <div class="nv_searcher-icons">
+                <!--<i class="fas fa-search search-icon" (click)="searchCountry()"></i>-->
+                <input #searcher type="text" (blur)="avoidBlurFail()" (input)="sendCountry(searcher.value)"  
+                 (focus)="sendCountry(searcher.value)" placeholder="Buscar países" [value]="selectedCountry"/>
+                <i (click)="turnShowScroll()" class="far fa-caret-square-down"></i>
+            </div>
+        </div>
+    </div>
+</div>

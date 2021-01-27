@@ -1,0 +1,43 @@
+
+.mc_container-dayOne{
+    border-top: 1px solid #a0aca5;
+    background-color: #C4E7D4;
+    padding: 0rem 20rem;
+    padding-top: 2rem;
+    margin-bottom: 0;
+}
+
+.mc_dayone-p{
+    font-size: 2.3rem;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 10rem;
+    background-color: #ebf3ef;
+    border: 1px solid #a0aca5;
+    padding: 1rem;
+    color: lighten($color: #04080F, $amount: 20%);
+    width: auto;
+}
+
+@media (max-width: 500px) {
+    .mc_container-dayOne{
+        border-top: 1px solid #a0aca5;
+        background-color: #C4E7D4;
+        padding: 0 1rem;
+        padding-top: 2rem;
+        margin-bottom: 0;
+    }
+    
+    .mc_dayone-p{
+        font-size: 1.8rem;
+        font-weight: 600;
+        text-align: center;
+        border-radius: 10rem;
+        background-color: #ebf3ef;
+        border: 1px solid #a0aca5;
+        padding: 1rem;
+        color: lighten($color: #04080F, $amount: 20%);
+        width: auto;
+    }
+    
+  }

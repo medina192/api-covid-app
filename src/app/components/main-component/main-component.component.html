@@ -1,0 +1,20 @@
+
+<app-navbar (countrySelected)="saveCountry($event)" *ngIf="countriesNames" 
+ [countriesNames]="countriesNames" ></app-navbar>
+
+<app-main-statistics [country]="country" *ngIf="country"></app-main-statistics>
+
+<app-main-chart [country]="country" *ngIf="country"></app-main-chart>
+
+<!--
+<div class="container-chart-secondary">
+  <div class="container-flex-chart-secondary">
+    <div class="chart-left">
+      <app-main-chart></app-main-chart>
+    </div>
+    <div class="statistics-right">
+      <app-secondary-statistics></app-secondary-statistics>
+    </div>
+  </div>
+</div>
+-->

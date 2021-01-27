@@ -1,0 +1,30 @@
+
+.c_container-chart{
+    background-color: #C4E7D4;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c_container-flex{
+    background-color: #ebf3ef;
+    width: 90%;
+    border: 1px solid #a0aca5;
+}
+
+@media (max-width: 500px){
+    .c_container-chart{
+        background-color: #C4E7D4;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .c_container-flex{
+        background-color: #ebf3ef;
+        width: 98%;
+        border: 1px solid #a0aca5;
+    }
+}

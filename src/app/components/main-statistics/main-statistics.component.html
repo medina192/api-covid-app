@@ -1,0 +1,33 @@
+
+
+<div class="ms_container">
+    <div class="ms_container-flex">
+        <div class="statistic-one">
+            <div class="ms_statistic-container-title-icon">
+                <h2>Número de contagios</h2>
+                <i class="fas fa-head-side-cough"></i>
+            </div>
+            <p class="ms_p-statistics-variable">{{sumConfirmed}}</p>
+        </div>
+        <div class="statistic-two">
+            <div class="ms_statistic-container-title-icon">
+                <h2>Número de fallecidos</h2>
+                <i class="fas fa-skull-crossbones"></i>
+            </div>
+            <p class="ms_p-statistics-variable">{{sumDeaths}}</p>
+        </div>
+        <div class="statistic-three">
+            <h2>Estadísticas del día de ayer</h2>
+            <div class="ms_container-yesterday">
+                <div class="ms_yesterday_data">
+                    <h3>Número de contagios</h3>
+                    <p>{{lastConfirmed}}</p>
+                </div>
+                <div class="ms_yesterday_data">
+                    <h3>Número de fallecidos</h3>
+                    <p>{{lastDeaths}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

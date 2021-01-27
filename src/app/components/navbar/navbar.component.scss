@@ -1,0 +1,146 @@
+
+
+.nb_container{
+    background-color: #2D728F;
+    padding: 0.5rem 1rem;
+}
+
+.nv_container-flex{
+    display: flex;
+}
+
+
+.nv_container-icon-title{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.nv_container-icon-title h1{
+    margin: 0;
+    font-size: 2.5rem;
+    margin-left: 0.8rem;
+    color:white;
+}
+
+.nv_container-icon-title i{
+    font-size: 3rem;
+    color:lighten($color: #BC5F04, $amount: 10%);
+}
+
+.nv_container-searcher{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.7rem;
+}
+
+.nv_searcher-icons{
+    background-color: #C4E7D4;
+    border-radius: 2.6rem;
+    padding: 1rem;
+}
+
+
+.nv_searcher-icons i{
+    font-size: 1.8rem;
+    color: lighten(#BC5F04, 5%);
+}
+
+.nv_searcher-icons input{
+    font-size: 1.8rem;
+    margin: 0 0.7rem;
+}
+
+
+.nv_container-scrollbar-relative{
+    position: relative;
+
+}
+
+.nv_container-scrollbar-absolute{
+    position: absolute;
+    top: 5.5rem;
+}
+
+.nv_scroll-class{
+    width: 30rem;
+    height: 35rem;
+    font-size: 1.5rem;  
+    background-color: #ebf3ef;
+}
+
+.nv_style-item-scroll{
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    transition: color 0.4s ease;
+    transition: font-size 0.4s ease;
+    color: lighten($color: #04080F, $amount: 13%);
+    font-size: 1.5rem;  
+
+    &:hover{
+        color: lighten($color: #04080F, $amount: 40%);
+        font-size: 1.7rem;
+    }
+}
+
+.nv_style-item-scroll hr{
+    margin-top: 0.4rem;
+}
+
+.nv_found-class{
+    width: 30rem;
+    height: auto;
+    background-color: #ebf3ef;
+    font-size: 1.5rem;  
+}
+
+
+@media (max-width: 500px) {
+    .nb_container{
+        background-color: #2D728F;
+        padding: 0.5rem 1rem;
+        width: 100%;
+    }
+    .nv_container-flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .nv_container-icon-title{
+        display: flex;
+        width: 95%;
+        justify-content: center;
+        align-items: center;
+    }
+    .nv_container-icon-title h1{
+        margin: 0;
+        font-size: 2.5rem;
+        margin-left: 0.8rem;
+        color:white;
+        margin-bottom: 1rem;
+    }
+    .nv_container-searcher{
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        padding: 0.7rem;
+    }
+    .nv_scroll-class{
+        width: 25rem;
+        height: 35rem;
+        font-size: 1.5rem;  
+        background-color: #ebf3ef;
+    }
+    .nv_found-class{
+        width: 25rem;
+        height: auto;
+        background-color: #ebf3ef;
+        font-size: 1.5rem;  
+    }
+  }
